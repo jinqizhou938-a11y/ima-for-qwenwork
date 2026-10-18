@@ -3,10 +3,10 @@
   "displayName": "ima Knowledge Kit",
   "displayNameEn": "ima Knowledge Kit",
   "displayNameCn": "ima 知识库套件",
-  "version": "1.1.0",
-  "description": "Bring Tencent ima (ima.copilot) notes and knowledge bases into QwenWork via the official ima OpenAPI. This plugin does NOT bundle ima's code — it installs the official ima-skill on demand and guides first-run credential setup.",
-  "descriptionEn": "Bring Tencent ima (ima.copilot) notes and knowledge bases into QwenWork via the official ima OpenAPI. This plugin does NOT bundle ima's code — it installs the official ima-skill on demand and guides first-run credential setup.",
-  "descriptionZh": "基于 ima 官方 OpenAPI，把腾讯 ima（ima.copilot）的笔记与知识库接入千问办公。本插件不内置腾讯官方代码，而是按需从官方 zip 安装 ima-skill，并引导首次凭证配置。",
+  "version": "1.1.1",
+  "description": "Bring Tencent ima (ima.copilot) notes and knowledge bases into QwenWork via the official ima OpenAPI. Ships a copy of the official ima-skill for offline install, can fetch the latest release on demand, and guides first-run credential setup.",
+  "descriptionEn": "Bring Tencent ima (ima.copilot) notes and knowledge bases into QwenWork via the official ima OpenAPI. Ships a copy of the official ima-skill for offline install, can fetch the latest release on demand, and guides first-run credential setup.",
+  "descriptionZh": "基于 ima 官方 OpenAPI，把腾讯 ima（ima.copilot）的笔记与知识库接入千问办公。随包提供官方 ima-skill 副本（可离线安装），也支持从官方 zip 按需拉取最新版，并引导首次凭证配置。",
   "author": {
     "name": "QwenWork User"
   },
