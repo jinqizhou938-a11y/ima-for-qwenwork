@@ -16,6 +16,26 @@ argument-hint-zh: 首次配置、更换 key 或排查配置失败
 
 这个技能只做一件事：**让当前这台机器上、当前这个用户，把自己账号的 ima 凭证配好并验证。** 别人用本套件时，第一件事就是触发它。
 
+## Step 0 · 确保官方 ima-skill 已安装（缺失就自动装，不要只提示）
+
+本仓库**不内置**腾讯官方 `ima-skill`。先检查是否已就位：
+
+```bash
+test -f "$HOME/.qwenworkcn/skills/ima-skill/ima_api.cjs" && echo OK || echo MISSING
+```
+
+- **OK** → 直接跳到 Step 1。
+- **MISSING** → **你现在就自动执行安装**（等同 `/ima-install` 的动作），不要停下来让用户另点一个命令：
+
+  ```bash
+  bash "$HOME/.qwenworkcn/plugins-custom/ima-knowledge-kit/skills/ima-install/scripts/install_ima_skill.sh" \
+    || bash "$HOME/.qwenworkcn/skills/ima-install/scripts/install_ima_skill.sh"
+  ```
+
+  脚本会从 ima 官方 zip 现取现装到 `~/.qwenworkcn/skills/ima-skill`（需联网 + Node ≥ 18）。装好 → 继续 Step 1。
+  - 若报"未找到 ima_api.cjs / 缺 unzip / 版本过旧"：让用户从 https://ima.qq.com/agent-interface 复制**当前**官方 zip 链接，带参数重跑 `install_ima_skill.sh "<链接>"`。
+  - 若环境无 Bash（纯 PowerShell）：按 `ima-install/SKILL.md` 的"无脚本兜底"手动装。
+
 ## 🔒 第一原则（必须对用户讲明）
 
 - Client ID / API Key 是**绑定个人 ima 账号**的私密凭证，相当于登录钥匙，拥有读取**和修改/删除**其知识库与笔记的权限。
