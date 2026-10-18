@@ -1,0 +1,17 @@
+# 系统垃圾
+.DS_Store
+Thumbs.db
+
+# Python 缓存
+__pycache__/
+*.pyc
+
+# 依赖
+node_modules/
+
+# 绝不允许提交的凭证/密钥
+.config/
+client_id
+api_key
+*.key
+.env

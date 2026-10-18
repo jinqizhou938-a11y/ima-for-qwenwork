@@ -1,0 +1,19 @@
+{
+  "name": "ima-knowledge-kit",
+  "displayName": "ima Knowledge Kit",
+  "displayNameEn": "ima Knowledge Kit",
+  "displayNameCn": "ima 知识库套件",
+  "version": "1.0.0",
+  "description": "Bring Tencent ima (ima.copilot) notes and knowledge bases into QwenWork using the official ima OpenAPI. Includes a first-run credential setup guide; every user authenticates with their own ima API key.",
+  "descriptionEn": "Bring Tencent ima (ima.copilot) notes and knowledge bases into QwenWork using the official ima OpenAPI. Includes a first-run credential setup guide; every user authenticates with their own ima API key.",
+  "descriptionZh": "基于 ima 官方 OpenAPI，把腾讯 ima（ima.copilot）的笔记与知识库接入千问办公，直接浏览、搜索、读取原文、上传与记笔记。内置首次凭证配置引导，每位用户使用自己的 ima API Key 鉴权。",
+  "author": {
+    "name": "QwenWork User"
+  },
+  "category": "productivity",
+  "tags": ["ima", "knowledge-base", "notes", "openapi", "tencent", "copilot"],
+  "skills": [
+    "skills/ima-setup",
+    "skills/ima-skill"
+  ]
+}
